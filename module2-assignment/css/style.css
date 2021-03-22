@@ -1,0 +1,43 @@
+@media(min-width: 992px){
+			.col-lg-4{
+				width: 31%;
+			}
+		}
+		@media(min-width: 768px)  and (max-width :991px){
+			.col-md-6{
+				width: 48%;
+			}
+			.col-md-12{
+				width:98%;
+			}
+		}
+		@media(max-width: 767px){
+			.col-sm-12{
+				width:100%;
+			}
+		}
+		.box{
+			margin: 1%;
+			box-sizing: border-box;
+			border: 2px dotted red;
+			float: left;
+			position: relative;
+
+		}
+		.header{
+			border: 2px solid yellow;
+			position: relative;
+			width: 50%;
+			float: right;
+			margin-top: 0px;
+			margin-bottom: 20px;
+
+		}
+		.con{
+			border: 2px solid green;
+			clear: right;
+			margin: 20px;
+		}
+		p{
+			text-align: center;
+		}
