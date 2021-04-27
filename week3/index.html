@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--browser sync in the (parent cd eg:week3) 
+		browser-sync start --server --directory --files "**/*"-->
 	<meta charset="utf-8">
 
 	<!-- tells some ie to use latest rendering versions -->
@@ -14,10 +16,99 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"></link>
 	<link rel="stylesheet"  href="css/style.css">
 	
+	<!-- google fonts- oxygen -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<!-- google fonts- lora// for brand -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Hello Prem</h1>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div  class="navbar-header">
+				<a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+					<div id="logo-image" alt="Logo Image"></div>
+				</a>
 
+				<div class="navbar-brand">
+					<a href="index.html">
+						<h1>Domino's Pizza</h1>
+					</a>
+					<p>
+						<img src="images/star-k-logo.png" alt="Kosher Certification" id= "kosher-logo">
+						<span>Kosher Certified</span>
+					</p>
+				</div>
+
+				
+				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				    </button>	
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<!-- for items to float on right side=navbar-right -->
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li>
+						<!--br for next line-->
+						<a href="menu-categories.html">
+							<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+					</li>
+					<li id="phone" class="hidden-xs">
+						<a href="tel:+916303938828">
+							<span class="glyphicon glyphicon-earphone"> 63039-38828</span>
+						</a>
+						<div>* We Deliver</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+	<div class="container">
+		<a href="tel:+916303938828" class="visible-xs" id="call-btn">
+			<span class="glyphicon glyphicon-earphone"> 63039-38828</span>
+		</a>
+
+		<div id="xs-deliver" class="text-center visible-xs">
+			* We deliver
+		</div>
+	</div>
+
+	<div class="container" id="main-content">
+		<div class="jumbotron">
+			<img src="images/DominosRestaurant_767.jpg" alt="Picture of Restaurant" class="visible-xs img-responsive">
+		</div>
+
+		<!-- home tiles -->
+		<div class="row" id="home-tiles">
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href=""><div id="menu-tile"><span>Menu</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<a href="specials.html"><div id='specials-tile'><span>Specials</span></div></a>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<!-- we are using target='blank' as we want to create new tab/window for map, and customer should not forget about us -->
+				<a href="" target="_blank"><div id="map-tile"><span>Map</span></div>
+			</div>
+		</div>
+	</div>
+	
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
