@@ -183,6 +183,9 @@ body{
 	border-right: 1px solid white;
 	height: 100%; 
 }
+#testimonials{
+	font-style: italic;
+}
 
 #testimonials > p:nth-child(even){
 	margin-top: 25px;
@@ -191,6 +194,8 @@ body{
 	margin-top: 35px;
 	color: white; 
 }
+/*end of footers*/
+
 /*media queries */
 
 /*large devices only*/
