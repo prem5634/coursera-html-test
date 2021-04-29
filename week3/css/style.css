@@ -132,22 +132,67 @@ body{
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
 	border-color: darkslategray;
-	box-shadow: 0 10px 10px 10px darkslategrey;
+	box-shadow: 0 10px 10px 5px darkslategrey;
 }
-#home-tiles a span{
-	
-}
+
 
 #menu-tile{
 	/*background: url("https://images.dominos.co.in/new_veggie_paradise.jpg") no-repeat;*/
 	background: url("../images/menu-tile-extra.jpg") no-repeat;
-	background-position: center; 
+	background-size: cover;  
+	background-position: center;
 }
 #specials-tile{
 	background: url("../images/specials-tile.jpg") no-repeat;
+	background-size: cover; 
 	background-position: center;
 }
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+	width: 100%;
+	text-align: center;
+	background-color: darkslategray;
+	opacity: 0.8; 
+	font-size: 1.6em;
+
+}
+/*Footer*/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #e41534;
+	border-top: 0; 
+}
+#hours, #address, #testimonials{
+	line-height: 2;
+}
+#hours > span, #address > span, #testimonials >span{
+	font-size: 1.3em;
+}
+#address p{
+	color: lightgreen;
+	font-size: 0.8em;
+	line-height: 1.8;
+	font-weight: 700;
+}
+#address {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	height: 100%; 
+}
+
+#testimonials > p:nth-child(even){
+	margin-top: 25px;
+}
+#copy-right, #copy-right a{
+	margin-top: 35px;
+	color: white; 
+}
 /*media queries */
+
 /*large devices only*/
 @media (min-width: 1200px){
 	.container .jumbotron{
@@ -183,11 +228,7 @@ body{
 		font-size: 1.2em;
 	}
 
-	#collapsable-nav a span{
-		font-size: 1em !important;
-		text-align: vertical;
-		margin-right: 10px;
-	}
+	
 	.container .jumbotron{
 		background: url("../images/DominosRestaurant_768.jpg") no-repeat;
 		height: 510px;
@@ -243,4 +284,10 @@ body{
 		padding: 0px;
 		margin :0 0 15px 0; 
 	}
+	#address{
+		border: 0px;
+	}
 }
+
+
+
