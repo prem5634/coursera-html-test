@@ -195,8 +195,42 @@ body{
 	color: white; 
 }
 /*end of footers*/
+/*End of Home Page*/
 
-/*media queries */
+/*Menu-categories Page*/
+#menu-categories-title{
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.category-tile{
+	position: relative;
+	overflow: hidden;
+	margin :0 auto 25px auto;
+	width: 100%;
+	border:2px solid white;
+	border-radius: 7px;
+}
+.category-tile img{
+	width: 100%;
+	height: auto;
+	/*vertical-align: center;*/
+	padding: auto;
+}
+.category-tile p{
+	line-height: initial;
+	text-align: center;
+	width: 100%;
+	background-color: darkslategray;
+	opacity: 0.8;
+	color: white;
+	font-size: 1.6em;
+	font-weight: 200;
+	margin-bottom: 0;
+}
+/*End of Menu Categories*/
+
+/*media queries for all */
 
 /*large devices only*/
 @media (min-width: 1200px){
