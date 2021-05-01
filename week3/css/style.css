@@ -214,8 +214,6 @@ body{
 .category-tile img{
 	width: 100%;
 	height: auto;
-	/*vertical-align: center;*/
-	padding: auto;
 }
 .category-tile p{
 	text-align: center;
@@ -228,12 +226,66 @@ body{
 	font-weight: 200;
 	margin-bottom: -1px;
 }
-
+.category-tile:hover{
+	border-color: darkslategray;
+	box-shadow: 0 10px 10px 5px darkslategrey;
+}
 #main-content a:hover, #main-content a:focus{
 	text-decoration: none; 
 }
 /*End of Menu Categories*/
 
+
+/*Veg-Pizza*/
+#veg-pizza-title{
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.menu-item-tile{
+	background-color: white; 
+	margin-bottom: 25px;
+	height: max-height;
+	position: relative;
+	padding-right: 0;
+}
+.menu-item-photo{
+	padding-left: 0;
+}
+
+.menu-item-number{
+	position: absolute;
+	/*bottom: 0;*/
+	right: 15px;
+	background-color: darkslategray;
+	opacity: 0.8;
+	border-bottom-left-radius: 6px;
+	border:2px solid gold;
+	font-size: 1.2em;
+	text-align: center;
+}
+.menu-item-number{
+	top: 0;
+}
+.menu-item-title{
+	font-weight: bold;
+	color: #e41534;
+}
+.menu-item-description{
+	color: black;
+	position: inherit;
+}
+.menu-item-price{
+	color: gold;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background-color: darkslategray;
+	text-align: center;
+	border:2px solid gold;
+}
+/*.menu-item-price span{
+	color: white;
+}*/
 /*media queries for all */
 
 /*large devices only*/
