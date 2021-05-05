@@ -250,6 +250,7 @@ body{
 }
 .menu-item-photo{
 	padding-left: 0;
+	max-width: 250px;
 }
 
 .menu-item-number{
@@ -283,9 +284,8 @@ body{
 	text-align: center;
 	border:2px solid gold;
 }
-/*.menu-item-price span{
-	color: white;
-}*/
+/*veg-pizza ends*/
+
 /*media queries for all */
 
 /*large devices only*/
@@ -300,6 +300,9 @@ body{
 	.container .jumbotron{
 		background: url("../images/DominosRestaurant_992.jpg") no-repeat;
 		height: 560px;
+	}
+	.menu-item-description{
+		font-size: 0.9em !important;
 	}
 }
 /*small devices only*/
