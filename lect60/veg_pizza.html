@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--browser sync in the (parent cd eg:week3) 
+		browser-sync start --server --directory --files "**/*"-->
+	<meta charset="utf-8">
+
+	<!-- tells some ie to use latest rendering versions -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial=scaile=1">
+	
+	<title>Bootstrap Starter Page</title>
+	
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+	<link rel="stylesheet"  href="css/style.css">
+	
+	<!-- google fonts- oxygen -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<!-- google fonts- lora// for brand -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div  class="navbar-header">
+				<a href="index.html" class="pull-left visible-sm visible-md visible-lg">
+					<div id="logo-image" alt="Logo Image"></div>
+				</a>
+
+				<div class="navbar-brand">
+					<a href="index.html">
+						<h1>Domino's Pizza</h1>
+					</a>
+					<p>
+						<img src="images/star-k-logo.png" alt="Kosher Certification" id= "kosher-logo">
+						<span>Kosher Certified</span>
+					</p>
+				</div>
+
+				
+				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				    </button>	
+			</div>
+
+			<div id="collapsable-nav" class="collapse navbar-collapse">
+				<!-- for items to float on right side=navbar-right -->
+				<ul id="nav-list" class="nav navbar-nav navbar-right">
+					<li>
+						<!--br for next line-->
+						<a href="menu-categories.html">
+							<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs">Awards</a>
+					</li>
+					<li id="phone" class="hidden-xs">
+						<a href="tel:+916303938828">
+							<span class="glyphicon glyphicon-earphone">63039-38828</span>
+						</a>
+						<div>* We Deliver</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
+	<div class="container">
+		<a href="tel:+916303938828" class="visible-xs" id="call-btn">
+			<span class="glyphicon glyphicon-earphone"> 63039-38828</span>
+		</a>
+		<div id="xs-deliver" class="text-center visible-xs">
+			* We deliver
+		</div>
+	</div>
+
+	<div class="container" id="main-content">
+		<h2 class="text-center" id="veg-pizza-title">Veg Pizza</h2>
+		<section class="row">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">001</div>
+						<img class="img-responsive" src="images/veg-pizza/veggie_paradise.png" alt="Veggie Paradise" width="100%">
+						<div class="menu-item-price ">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Veggie Paradise</h4>
+						<p>The awesome foursome! Golden corn, black olives, capsicum, red paprika</p>
+					</div>
+				</div>
+				
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">002</div>
+						<img class="img-responsive" src="images/veg-pizza/peppy_paneer.png" alt="Peppy Paneer" width="100%">
+						<div class="menu-item-price">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Peppy Paneer</h4>
+						<p>Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika</p>
+					</div>
+				</div>
+				
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">003</div>
+						<img class="img-responsive" src="images/veg-pizza/moroccan_spice_pasta_pizza.png" alt="moroccan_spice_pasta_pizza" width="100%">
+						<div class="menu-item-price">Rs 305<span> (M) </span>Rs 495 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Moroccan Spice Pasta Pizza</h4>
+						<p>A pizza loaded with a spicy combination of Harissa sauce and delicious pasta.</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">004</div>
+						<img class="img-responsive" src="images/veg-pizza/margherita.png" alt="margherita" width="100%">
+						<div class="menu-item-price"> 199<span> (M) </span>Rs 395 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Margherita</h4>
+						<p>Classic delight with 100% real mozzarella cheese</p>
+					</div>
+				</div>
+				<hr class="visible-xs">
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">005</div>
+						<img class="img-responsive" src="images/veg-pizza/double_cheese_margherita.png" alt="Double Cheese Margherita" width="100%">
+						<div class="menu-item-price">Rs 335<span> (M) </span>Rs 535 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Double Cheese Margherita</h4>
+						<p>A classic delight loaded with extra 100% real mozzarella cheese</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">006</div>
+						<img class="img-responsive" src="images/veg-pizza/fresh_veggie.png" alt="Fresh Veggie" width="100%">
+						<div class="menu-item-price">Rs 335<span> (M) </span>Rs 535 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Fresh Veggie</h4>
+						<p>Delectable combination of onion & capsicum, a veggie lovers pick</p>
+					</div>
+				</div>
+				
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">007</div>
+						<img class="img-responsive" src="images/veg-pizza/paneer_makhani.png" alt="Paneer Makhani" width="100%">
+						<div class="menu-item-price">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Paneer Makhani</h4>
+						<p>Flavorful twist of spicy makhani sauce topped with paneer & capsicum</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">008</div>
+						<img class="img-responsive" src="images/veg-pizza/cheese_and_tomato.png" alt="Cheese n Tomato" width="100%">
+						<div class="menu-item-price">Rs 305<span> (M) </span>Rs 495 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Cheese n Tomato</h4>
+						<p>A delectable combination of cheese and juicy tomato</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">009</div>
+						<img class="img-responsive" src="images/veg-pizza/achari_do_pyaza.png" alt="Achari Do Pyaza" width="100%">
+						<div class="menu-item-price">Rs 305<span> (M) </span>Rs 495 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Achari Do Pyaza</h4>
+						<p>Tangy & spicy achari flavours on a super cheesy onion pizza- as desi as it gets!</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">010</div>
+						<img class="img-responsive" src="images/veg-pizza/creamy_tomato_pasta_pizza.png" alt="Creamy Tomato Pasta Pizza - Veg" width="100%">
+						<!-- <img class="img-responsive" src="images/veg-pizza/CreamyTomatoPPVG_N.jpg" alt="Creamy Tomato Pasta Pizza - Veg" width="100%"> -->
+						<div class="menu-item-price">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Creamy Tomato Pasta Pizza - Veg</h4>
+						<p>Creamy tomato pasta, capsicum, red and yellow bell peppers and black olives.</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">011</div>
+						<img class="img-responsive" src="images/veg-pizza/veg_extravaganza.png" alt="Veg Extravaganza" width="100%">
+						<div class="menu-item-price">Rs 450<span> (M) </span>Rs 695 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Veg Extravaganza</h4>
+						<p>Black olives, capsicum, onion, corn, tomato, grilled mushroom, jalapeno & cheese</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">012</div>
+						<img class="img-responsive" src="images/veg-pizza/mexican_green_wave.png" alt="Mexican Green Wave" width="100%">
+						<div class="menu-item-price">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Mexican Green Wave</h4>
+						<p>Mexican herbs sprinkled on onion, capsicum, tomato & jalapeno</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">013</div>
+						<img class="img-responsive" src="images/veg-pizza/deluxe_veggie.png" alt="Deluxe Veggie" width="100%">
+						<div class="menu-item-price">Rs 450<span> (M) </span>Rs 695 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Deluxe Veggie</h4>
+						<p>Veg delight - onion, capsicum, grilled mushroom, corn & paneer</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">014</div>
+						<img class="img-responsive" src="images/veg-pizza/farmhouse.png" alt="Farmhouse" width="100%">
+						<div class="menu-item-price">Rs 395<span> (M) </span>Rs 595 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Farmhouse</h4>
+						<p>Delightful combination of onion, capsicum, tomato & grilled mushroom</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">015</div>
+						<img class="img-responsive" src="images/veg-pizza/cheese_n_corn.png" alt="Cheese n Corn" width="100%">
+						<div class="menu-item-price">Rs 305<span> (M) </span>Rs 495 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Cheese n Corn</h4>
+						<p>A delectable combination of sweet & juicy golden corn</p>
+					</div>
+				</div>
+			</div>
+			<hr class="visible-sm">
+			<div class="menu-item-tile col-md-6">
+				<div class="row">
+					<div class="col-sm-7 menu-item-photo">
+						<div class="menu-item-number">016</div>
+						<img class="img-responsive" src="images/veg-pizza/indian_tandoori_paneer.png" alt="Indi Tandoori Paneer" width="100%">
+						<div class="menu-item-price">Rs 450<span> (M) </span>Rs 695 <span> (L) </span></div>
+					</div>
+					<div class="col-sm-5 menu-item-description">
+						<hr class="visible-xs">
+						<h4 class="menu-item-title">Indian Tandoori Paneer</h4>
+						<p>It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika & mint mayo</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div> <!-- End of main-content -->
+	
+	<footer class="panel-footer">
+		<div class="container">
+			<div class=" row">
+				<section class="col-sm-4" id='hours'>
+					<span>Hours: </span><br>
+					Mon-Fri: 10AM - 2AM<br>
+					Sun: 11AM - 1AM<br>
+					Saturday Closed
+					<hr class="visible-xs">
+				</section>
+				<section class="col-sm-4" id='address'>
+					<span>Address: </span><br>
+					Prajya Princeton Towers ( Ground Floor ),<br>
+					LB Nagar Main Road, Saroor Nagar,<br>
+					Hyderabad, Telangana.<br>
+					500074<br><br>
+					<p>*Free Delivery with minimum order of Rs 500. Service area within 3-4km area.</p>
+					<hr class="visible-xs">
+				</section>
+				<section class="col-sm-4" id="testimonials">
+					<span>Reviews:</span><br>
+					<p>"Pizzas are great. I love Veg Indi Tandoori Pizza. That's the best pizza for Veggies!!"</p>
+					<p>"One of the best Domnios place. You can choose from wide variety. You can both veg and non-veg  pizzas. Pizza lovers should visit this place."</p>
+				</section>
+			</div>
+			<div class="text-center" id="copy-right">&copy; <a href="https://github.com/prem5634/coursera-html-test/tree/gh-pages/week3" target="_blank">S Prem Kumar's</a> Dominos Website 2021 </div>
+		</div>
+	</footer>
+	<!-- jQuery (Bootstrap JS plugins depend on it) -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
